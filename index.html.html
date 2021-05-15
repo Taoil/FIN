@@ -1,8 +1,158 @@
 <html>
 <head>
 	<title>Taoil, Tissan Mae B.</title>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
 </head>
+<style>
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.main{
+	width: 100%;
+	height: 100vh;
+	position:relative;
+	overflow: hidden;
+	background: linear-gradient(white);
+}
+nav{
+	width: 80%;
+	position: sticky;
+	margin: 20px auto;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+}
+.logo{
+	flex-basis: 20%;
+}
+.logo img{
+	width: 100px;
+}
+ul{
+	list-style-type: none;
+	margin: 0 115px;
+	padding: 0;
+	overflow: hidden;
+	background-color: maroon;
+}
+li{
+	float: right;
+}
+li a{
+	display: block;
+	padding: 20px 18px;
+	margin: 0 px;
+	color: white;
+	text-decoration: none;
+}
+.information{
+	width: 625px;
+	height: 625px;
+	position: absolute;
+	top: 50%;
+	left: -10%;
+	transform: translateY(-50%);
+}
+#circle{
+	width: 625px;
+	height: 625px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	transform: rotate(0deg);
+	transition: 1s;
+}
+.feature img{
+	width: 70px;
+}
+.feature{
+	position: absolute;
+}
+.one{
+	top: 250px;
+	right: 0px;
+	color: maroon;
+}
+.two{
+	top: 30px;
+	left: 350px;
+	transform: rotate(270deg);
+	color: maroon;
+}
+.three{
+	bottom: 250px;
+	left: 0px;
+	transform: rotate(-180deg);
+	color: maroon;
+}
+.four{
+	bottom: 50px;
+	right: 300px;
+	transform: rotate(-270deg);
+	color: maroon;
+}
+.city{
+	width: 200px;
+	position: absolute;
+	top: 50%;
+	left: 35%;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+.controls{
+	position: absolute;
+	right: 10%;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+}
+.controls h3{
+	margin: 15px 0;
+	color: #fff;
+}
+#upBtn{
+	width: 15px;
+	cursor: pointer;
+}
+#downBtn{
+	width: 15px;
+	cursor: pointer;
+	transform: rotate(180deg);
+}
+.overlay{
+	width: 0;
+	height: 0;
+	border-top: 350px solid maroon;
+	border-right: 400px solid white;
+	border-bottom: 300px solid maroon;
+	border-left: 300px solid maroon;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.years{
+	align-items: center;
+	position: absolute;
+	float: left;
+	left: 50%;
+	bottom: 100%;
+	top: 150%;
+}
+.years img{
+	width: 350px;
+	height: 300px;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  section {
+    width: 100%;
+  }
+</style>
 <body>
 <div class="main">
 	<nav>
